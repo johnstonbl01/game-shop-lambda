@@ -1,0 +1,16 @@
+{
+  "name": "game-shop-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-offline": "^6.4.0"
+  },
+  "scripts": {
+    "dev": "sls offline"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,23 @@
+service: game-shop-lambda
+app: game-shop-lambda
+org: johnstonbl01
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  games:
+    handler: handler.games
+    events:
+      - http:
+          path: games
+          method: get
+          cors: true
+
+custom:
+  serverless-offline:
+    httpPort: 4000
